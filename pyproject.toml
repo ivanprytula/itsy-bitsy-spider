@@ -1,0 +1,19 @@
+# ==== Black ====
+[tool.black]
+line-length = 119
+target-version = ['py311']
+skip-string-normalization = false
+exclude = '''
+(
+  /(
+    | \.git
+  )/
+)
+'''
+
+# ==== Ruff ====
+[tool.ruff]
+line-length = 120
+# Enable Pyflakes `E` and `F` codes by default.
+select = ["E", "F"]
+ignore = ["E501", "E741"]
