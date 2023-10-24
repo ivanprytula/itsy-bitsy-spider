@@ -1,6 +1,13 @@
 # Count all installed dependencies with sub dependencies:
 # pip freeze --all | wc --lines
 
+# HTTP clients, frameworks
+scrapy==2.11.0
+httpx[http2]==0.25.0  # The next generation HTTP client -- https://pypi.org/project/httpx/
+fake_useragent==1.3.0  # Up-to-date simple useragent faker with real world database -- https://pypi.org/project/fake-useragent/
+lxml==4.9.3  # Powerful and Pythonic XML processing library  -- https://pypi.org/project/lxml/
+
+
 # --- DEV/local tools ---
 pipdeptree==2.13.0  # CLI to show dependency tree of packages -- https://pypi.org/project/pipdeptree/
 pendulum==2.1.2  # Python datetimes made easy -- https://github.com/sdispater/pendulum
@@ -12,5 +19,6 @@ pre-commit==3.5.0  # https://pypi.org/project/pre-commit/
 black==23.10.1  # The uncompromising code formatter -- https://pypi.org/project/black/
 ruff==0.1.1  # An extremely fast Python linter, written in Rust -- https://pypi.org/project/ruff/
 ipython==8.16.1  # https://pypi.org/project/ipython/
+isort==5.12.0
 
 memray==1.10.0  # Python memory profiler -- https://github.com/bloomberg/memray
