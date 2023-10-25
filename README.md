@@ -26,7 +26,21 @@ To scrape limited number of pages change values of these configs in `yelpdata/se
 CLOSESPIDER_PAGECOUNT = 3
 CLOSESPIDER_ITEMCOUNT = 25
 DUPEFILTER_CLASS = "scrapy.dupefilters.BaseDupeFilter"
+
+# ------------------------
+SAMPLE_LOCATIONS = [
+    "San Francisco, CA",
+    "Palo Alto, CA",
+    "Oakland, CA",
+    "New York, NY",
+    "San Carlos, CA",
+    "Seattle, WA",
+]
+SAMPLE_CATEGORIES = ["contractors", "restaurants", "electricians", "nightlife", "delivery", "reservations"]
+
 ```
+
+
 
 ### WIP
 
