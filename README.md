@@ -10,7 +10,11 @@ Web crawler and scraper
 4. Explore directories with attempts to solve the problem/test task
 5. In general, all scripts are run as `python <filename>.py --category="<category>" --location="<location>"`
 
-## WIP
+## Usage
 
-The main problem with accessing Yelp API search endpoint (the one that holds most of the "easy to get data") is the following:
-Response in a huge JSON object with (oven 10K lines) and the only way I managed to did request is to spawn subprocess with cURL library.
+```shell
+# with persistence support enabled, e.g. we can continue from where we left off and get only new businesses
+scrapy crawl yelp -s JOBDIR=spiders/yelp -a category=Contractors -a location='San Francisco, CA' -o business_data.json
+
+# Then, we can stop the spider safely at any time (by pressing Ctrl-C or sending a signal), and resume it later by issuing the same command
+```

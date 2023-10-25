@@ -5,3 +5,9 @@ __pycache__/
 
 .vscode/
 .idea/
+
+**/sandbox/
+
+yelpdata/spiders/yelp/requests.seen
+yelpdata/spiders/yelp/requests.queue
+yelpdata/spiders/yelp/spider.state

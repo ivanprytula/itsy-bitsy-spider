@@ -2,7 +2,7 @@
 # pip freeze --all | wc --lines
 
 # HTTP clients, frameworks
-scrapy==2.11.0
+scrapy==2.11.0  # A high-level Web Crawling and Web Scraping framework -- https://pypi.org/project/Scrapy/
 httpx[http2]==0.25.0  # The next generation HTTP client -- https://pypi.org/project/httpx/
 fake_useragent==1.3.0  # Up-to-date simple useragent faker with real world database -- https://pypi.org/project/fake-useragent/
 lxml==4.9.3  # Powerful and Pythonic XML processing library  -- https://pypi.org/project/lxml/
