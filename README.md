@@ -40,8 +40,6 @@ SAMPLE_CATEGORIES = ["contractors", "restaurants", "electricians", "nightlife", 
 
 ```
 
-
-
 ### WIP
 
 There is also a possibility to get some data faster via API calls. For instance, endpoint below is triggered "under the hood" when we hit search button on UI or paginate.
