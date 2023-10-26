@@ -31,9 +31,11 @@ class YelpSpider(CrawlSpider):
         self.logger.info("Hi, this is an business page! %s", response.url)
 
         business_name = response.xpath("normalize-space(//h1/text())").get()
-        business_rating = response.xpath('(//main//div[starts-with(@class, "five-stars")])[1]/@aria-label').re_first(
-            FLOAT_POINT_NUMBER_REGEX
-        )
+        # business_rating = response.xpath('(//main//div[starts-with(@class, "five-stars")])[1]/@aria-label').re_first(
+        #     FLOAT_POINT_NUMBER_REGEX
+        # )
+        business_rating = response.xpath('(//main//div[starts-with(@class, "five-stars")])[1]/@aria-label')  # -> []
+
         num_reviews = response.xpath("//a[@href='#reviews']/text()").re_first(r"\d+")
         business_yelp_url = response.url
         business_website = response.xpath(

@@ -16,6 +16,8 @@ cd yelpdata
 
 # with persistence support enabled, e.g. we can continue from where we left off and get only new businesses
 scrapy crawl yelp -s JOBDIR=spiders/yelp -a category=Contractors -a location='San Francisco, CA' -o business_data.json
+scrapy crawl yelp -a category=reservations -a location='Oakland, CA' -o reservations_business_data.json
+scrapy crawl yelp -a category=electricians -a location='Seattle, WA' -o electricians_business_data.json
 
 # Then, we can stop the spider safely at any time (by pressing Ctrl-C or sending a signal), and resume it later by issuing the same command
 ```
